@@ -2,3 +2,5 @@ typer
 rich
 shellingham
 tomli
+tomli-w
+pathlib
