@@ -8,8 +8,8 @@ import typer
 from rich import print
 
 
-def fetch_repositories_in_groups(
-    conf_path: Path, groups: Optional[List[str]], all=False
+def get_workspace_dictionary(
+    conf_path: Path, workspaces: Optional[List[str]], all=False
 ):
     """
     Accepts config path and a list of groups as parameters
@@ -17,19 +17,37 @@ def fetch_repositories_in_groups(
     """
 
     with open(conf_path, "rb") as f:
-        toml_dict = tomli.load(f)
-        repo_dict = {}
+        toml_dict = tomli.load(f).get("workspaces")
+        dict = {}
         if all:
-            groups = list(toml_dict.keys())
+            workspaces = list(toml_dict)
 
-        for group in groups:
-            if group in toml_dict:
-                repo_dict[group] = toml_dict.get(group).get("repos")
+        for workspace in workspaces:
+            if workspace in toml_dict:
+                dict[workspace] = toml_dict.get(workspace)
             else:
-                group_names = list(toml_dict.keys())
                 print(
-                    f"  [red bold]Error:[/red bold] The group [green bold]'{group}'[/green bold] does not exist! Did you mean one of these? {group_names}"
+                    f"  [red bold]Error:[/red bold] The group [green bold]'{workspace}'[/green bold] does not exist! Did you mean one of these? {get_workspace_names}"
                 )
                 raise typer.Exit(code=1)
 
-        return repo_dict
+        return dict
+
+
+# def get_repository_information(dict: dict, workspace: str, repository: str):
+#     print(workspace, repository)
+
+#     result = []
+#     for property in dict.values():
+#         result.append(str(property))
+#     return result
+
+
+def get_workspace_names(conf_path: Path):
+    names = []
+    with open(conf_path, "rb") as f:
+        toml_dict = tomli.load(f).get("workspaces")
+
+        for workspace in toml_dict:
+            names.append(workspace)
+    return names

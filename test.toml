@@ -1,0 +1,41 @@
+[workspaces]
+
+[workspaces.Default]
+
+[workspaces.Default.currently-api]
+name = "currently-api"
+desc = "Django API"
+path = "~/Documents/GitHub/currently-api"
+docker-compose = true
+
+[workspaces.Default.currently-web]
+name = "currently-web"
+desc = "Redux Frontend"
+path = "~/Documents/GitHub/currently-web"
+docker-compose = true
+
+[workspaces.Default.currently-mqtt]
+name = "currently-mqtt"
+desc = "MQTT Stack"
+path = "~/Documents/GitHub/currently-mqtt"
+docker-compose = false
+
+[workspaces.currently-dev]
+
+[workspaces.currently-dev.currently-api]
+name = "currently-api"
+desc = "Django API"
+path = "~/Documents/GitHub/currently-api"
+docker-compose = true
+
+[workspaces.currently-dev.currently-web]
+name = "currently-web"
+desc = "Redux Frontend"
+path = "~/Documents/GitHub/currently-web"
+docker-compose = true
+
+[workspaces.currently-dev.currently-mqtt]
+name = "currently-mqtt"
+desc = "MQTT Stack"
+path = "~/Documents/GitHub/currently-mqtt"
+docker-compose = true

@@ -68,37 +68,40 @@ def show(
     all: bool = typer.Option(
         False, "--all", "-a", help="Display all repository groups"
     ),
-    group: List[str] = typer.Argument(
+    workspace: List[str] = typer.Argument(
         None,
-        help="List of desired groups to display [green]Ex: default my-web-app sample-repository-group[/green] [dim]\[default: default][/dim]",
+        help="List of which workspaces to display configuration information about.[green]Ex: default my-web-app sample-repository-group[/green] [dim]\[default: default][/dim]",
         show_default=False,
-        envvar="ACTIVE_REPOSITORY_GROUP",
+        envvar="ACTIVE_REPOSITORY_WORKSPACE",
     ),
 ):
     """
-    Print tracked repositories from a list of repository groups.
+    Print tracked repositories from a list of repository workspaces.
     """
-    if not group:
-        group = ["default"]
+    if not workspace:
+        workspace = ["Default"]
 
-    repo_dict = utils.fetch_repositories_in_groups(path, group, all=all)
-    for g in repo_dict:
+    workspace_dict = utils.get_workspace_dictionary(path, workspace, all=all)
+    for ws in workspace_dict:
 
         table = Table(title=None, box=box.MINIMAL)
 
-        table.add_column("Repository Name", justify="left", style="cyan", no_wrap=True)
+        table.add_column("Repository Name", justify="left", no_wrap=True)
+        table.add_column("Description", justify="left", style="dim")
         table.add_column("Path", style="magenta")
-        table.add_column("Docker Compose", style="cyan", justify="center")
-        table.add_column("Git Branch", style="magenta", justify="center")
+        table.add_column("Docker Compose", style="yellow dim", justify="center")
+        table.add_column("Active Git Branch", style="cyan", justify="center")
+
         panel = Panel(
             table,
-            title=f"[yellow bold]Repository Group: {g}",
+            title=f"[yellow bold]Workspace: {ws}",
             expand=False,
             box=box.ROUNDED,
         )
 
-        for repo in repo_dict.get(g):
-            table.add_row(str(pathlib.PurePath(repo).name), repo)
+        for repository in workspace_dict.get(ws):
+
+            table.add_row(*workspace_dict.get(ws).get(repository).values())
 
         console.print(panel)
 
