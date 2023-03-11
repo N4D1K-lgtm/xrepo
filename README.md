@@ -1,6 +1,6 @@
-<img src="static/connection.gif" align="right" alt="Xrepo Gif" width="150" height="150">
+<img src="static/connection.gif" align="right" alt="Xrepo Gif" width="150" height="150" style="background-color:black">
 
-# Dooit ✔️
+# XRepo ✔️
 *A todo manager that you didn't ask for, but needed !* \
 to make sure that you complete your tasks on time ;)
 
