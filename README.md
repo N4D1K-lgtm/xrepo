@@ -1,4 +1,4 @@
-<img src="https://github.com/N4D1K-lgtm/xrepo/blob/6d50c304d7b31a3829990009acd58df667c4bd1d/code-fork.gif" align="right" alt="Xrepo Gif" width="150" height="150">
+<img src="static/connection.gif" align="right" alt="Xrepo Gif" width="150" height="150">
 
 # Dooit ✔️
 *A todo manager that you didn't ask for, but needed !* \
