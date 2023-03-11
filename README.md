@@ -1,76 +1,84 @@
-<img src="static/Connection.gif" align="right" alt="Xrepo Gif" width="150" height="150" style="background-color:black">
+<img src="static/Connection.gif" align="right" alt="Branching Animation" width="150" height="150" style="background-color:black">
 
-# XRepo ✔️
-*A todo manager that you didn't ask for, but needed !* \
-to make sure that you complete your tasks on time ;)
+# XRepo 
+*An easier way to simultaneously develop across multiple interdependent repositories.* \
+Keep reading to learn how to install, configure and use XRepo!
 
 [![GitHub issues](https://img.shields.io/github/issues/N4D1K-lgtm/xrepo?style=for-the-badge)](https://github.com/N4D1K-lgtm/xrepo/issues)
 [![GitHub stars](https://img.shields.io/github/stars/N4D1K-lgtm/xrepo?color=green&style=for-the-badge)](https://github.com/N4D1K-lgtm/xrepo/stargazers)
 [![GitHub license](https://img.shields.io/github/license/N4D1K-lgtm/xrepo?color=yellow&style=for-the-badge)](https://github.com/N4D1K-lgtm/xrepo/blob/main/LICENSE)
 
-# Installation 🔨
+# Table of contents
 
-Dooit can be installed with various package managers!
+- [About XRepo](#about-xrepo)
+- [Installation](#installation)
+    - [With Pip (Recommended)](#with-pip-recommended)
+    - [With AUR helper](#with-aur-helper)
+    - [With Homebrew](#with-homebrew)
+- [Features](#features)
+- [Usage and Configuration](#usage-and-configuration)
+- [Examples](#examples)
+- [Contribution](#contribution)
 
-### With Pip 🐍
+# About XRepo
 
-You can install dooit easily using a python one-liner:
+sample blah blah
+
+# Installation
+
+The easiest way to install XRepo is with pip, but you can also install XRepo with your linux distribution's package manager.
+
+### With Pip (Recommended)
+
+> It is recommended to install XRepo within a fresh python virtual environment.
 
 ```bash
-pip install dooit
+pip install xrepo
 ```
 
-### With AUR helper 📦
+### With AUR helper 
 ```
-yay -S dooit-git
+yay -S xrepo
 ```
 
-### With Homebrew 🍻
+### With Homebrew 
 
 You can install the latest stable version of dooit with [Homebrew](https://brew.sh):
 
 ```bash
-brew install dooit
+brew install xrepo
 ```
 
 Alternatively, you can install the most recent development version of dooit:
 
 ```bash
-brew install dooit --HEAD
+brew install xrepo --HEAD
 ```
 
-# Features 🌟
+# Features 
 
-> Some features that dooit comes with:
+> Some features that XRepo comes with:
 
-- An interactive & beautiful UI
-- An API automate stuff with python scripts and integrate with other apps (!plugin support in pipeline!)
-- Configurable icons, themes and bar!
-- Vim like keybindings
-- Topicwise separated Todo Lists (With branching)
-- Nested todos!
-- Support for recurrence todos
-- Sort options with menu (Name, Date, Urgency, Status)
-- Search & edit on the fly!
+- An interactive & beautiful UI.
+- Complete git and GitHub CLI integration.
+- Configurable workspaces with TOML and .env files.
+- Docker and docker-compose support.
+- Automated testing (requires configuration).
+- Extendable with support for custom scripts!
 
 **Note: See [CHANGELOG.md]() to get more details on changes and feature additions!**
 
-# Usage and configuration :gear:
-After launching the app, You can press the `?` key to get started with the app :)\
-You can also tweak everything including the UI, keybindings and status bar to your liking\
-Head over to [wiki](https://github.com/kraanzu/dooit/wiki/Configuration) to know more!
+# Usage and Configuration
 
 
-# Screenshots 🖼️
-![Screenshot](https://user-images.githubusercontent.com/97718086/221467485-fae198f7-51b1-4a71-91d9-88b51897aeeb.png)
 
-# Contribution 🤝
-- Want to contribute? Feel free to open a PR! 😸
-- Got some ideas for improvements? I'm all ears! 👂
+# Examples
+
+# Contribution 
+
+- Want to contribute? Feel free to open a PR! 
+- Got some ideas for improvements? I'm all ears!
 
 ----------------------------
 
-#### Other TUI projects 🤓 :
-If you liked dooit then you might wanna try out some of my other TUI projects as well
-- [termtyper](https://github.com/kraanzu/termtyper) - A typing-test app for terminal
-- [gupshup](https://github.com/kraanzu/gupshup) - A localhost TUI chat client
+
