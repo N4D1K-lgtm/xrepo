@@ -4,10 +4,9 @@
 *A todo manager that you didn't ask for, but needed !* \
 to make sure that you complete your tasks on time ;)
 
-[![GitHub issues](https://img.shields.io/github/issues/kraanzu/dooit?color=red&style=for-the-badge)](https://github.com/kraanzu/doit/issues)
-[![GitHub stars](https://img.shields.io/github/stars/kraanzu/dooit?color=green&style=for-the-badge)](https://github.com/kraanzu/doit/stargazers)
-[![GitHub license](https://img.shields.io/github/license/kraanzu/dooit?color=yellow&style=for-the-badge)](https://github.com/kraanzu/doit/blob/main/LICENSE)
-[![Support Server](https://img.shields.io/discord/989186205025464390.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)](https://discord.gg/WA2ER9MBWa)
+[![GitHub issues](https://img.shields.io/github/N4D1K-lgtm/xrepo?color=red&style=for-the-badge)](https://github.com/N4D1K-lgtm/xrepo/issues)
+[![GitHub stars](https://img.shields.io/github/N4D1K-lgtm/xrepo?color=green&style=for-the-badge)](https://github.com/N4D1K-lgtm/xrepo/stargazers)
+[![GitHub license](https://img.shields.io/github/license/N4D1K-lgtm/xrepo?color=yellow&style=for-the-badge)](https://github.com/N4D1K-lgtm/xrepo/blob/main/LICENSE)
 
 # Installation 🔨
 
