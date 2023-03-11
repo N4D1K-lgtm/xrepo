@@ -4,8 +4,8 @@
 *A todo manager that you didn't ask for, but needed !* \
 to make sure that you complete your tasks on time ;)
 
-[![GitHub issues](https://img.shields.io/github/N4D1K-lgtm/xrepo?color=red&style=for-the-badge)](https://github.com/N4D1K-lgtm/xrepo/issues)
-[![GitHub stars](https://img.shields.io/github/N4D1K-lgtm/xrepo?color=green&style=for-the-badge)](https://github.com/N4D1K-lgtm/xrepo/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/N4D1K-lgtm/xrepo?style=for-the-badge)](https://github.com/N4D1K-lgtm/xrepo/issues)
+[![GitHub stars](https://img.shields.io/github/stars/N4D1K-lgtm/xrepo?color=green&style=for-the-badge)](https://github.com/N4D1K-lgtm/xrepo/stargazers)
 [![GitHub license](https://img.shields.io/github/license/N4D1K-lgtm/xrepo?color=yellow&style=for-the-badge)](https://github.com/N4D1K-lgtm/xrepo/blob/main/LICENSE)
 
 # Installation 🔨
