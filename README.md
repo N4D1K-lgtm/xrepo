@@ -1,4 +1,4 @@
-<img src="static/connection.gif" align="right" alt="Xrepo Gif" width="150" height="150" style="background-color:black">
+<img src="static/Connection.gif" align="right" alt="Xrepo Gif" width="150" height="150" style="background-color:black">
 
 # XRepo ✔️
 *A todo manager that you didn't ask for, but needed !* \
